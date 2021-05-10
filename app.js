@@ -23,6 +23,11 @@ const classRoutes = require('./routes/classes')
 const shopRoutes = require('./routes/shop')  
 const orderRoutes = require('./routes/order')  
 
+app.get('/', (res, req)=>{
+    res.send('working!!!')
+})
+
+
 
 //route middleware
 app.use(`${apis}`, inventoryRoutes)
