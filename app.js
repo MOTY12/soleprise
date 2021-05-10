@@ -37,4 +37,4 @@ app.use(`${apis}`, orderRoutes)
     console.log('not connect to db')
 })
 
-app.listen(process.env.Port || 3000)
+app.listen(process.env.PORT || 3000)
