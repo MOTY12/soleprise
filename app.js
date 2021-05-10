@@ -37,4 +37,12 @@ app.use(`${apis}`, orderRoutes)
     console.log('not connect to db')
 })
 
-app.listen(4000, ()=>console.log('Server up and running on port http://localhost:4000'))
+const host = '0.0.0.0'
+const port = process.env.Port || 3000
+    
+    
+app.listen(port, host, function(){
+    console.log("server started......")
+})
+    
+    //()=>console.log('Server up and running on port http://localhost:3000'))

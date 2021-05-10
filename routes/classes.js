@@ -66,8 +66,17 @@ router.put('/classes/:id', async(req, res) => {
    
 })
 
-
-
+// //get class by name classlevel
+// router.get('/classes', async (req, res)=>{
+//     const categorylist = await classSchema.findOne()
+//     res.json(categorylist)
+//     if (!categorylist) {
+//         res.status(500).json({
+//             success: false,
+//             message: "no classes"
+//         })
+//     }
+//     })
 
 
 //delete classes

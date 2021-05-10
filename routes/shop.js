@@ -100,7 +100,8 @@ router.put('/shop/:id', uploadOptions.single('storeimage'), async(req, res) => {
 
 // get new shop
 router.get('/shop', async (req, res)=>{
-    const shoplist = await shopSchema.find().populate('category', 'name')
+    const shoplist = await shopSchema.find()
+    //.populate('category', 'name')
 if (!shoplist) {
     res.status(500).json({
         message: "No shop found "
