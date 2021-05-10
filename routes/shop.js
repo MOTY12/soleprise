@@ -47,6 +47,8 @@ router.post('/shop', uploadOptions.single('storeimage'), async (req, res) => {
             storename: req.body.storename,
             storeOwner: req.body.storeOwner,
             storenumber: req.body.storenumber,
+            email: req.body.email,
+            phonenumber: req.body.phonenumber,
             location: req.body.location,
             category: req.body.category
        
@@ -73,6 +75,8 @@ router.put('/shop/:id', uploadOptions.single('storeimage'), async(req, res) => {
             storename: req.body.storename,
             storeOwner: req.body.storeOwner,
             storenumber: req.body.storenumber,
+            email: req.body.email,
+            phonenumber: req.body.phonenumber,
             location: req.body.location,
             category: req.body.category
         },

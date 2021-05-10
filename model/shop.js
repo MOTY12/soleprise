@@ -16,7 +16,15 @@ const shopSchema = new mongoose.Schema({
     storenumber: {
         type: String,
         default: '0'
-    },
+    }, 
+    email:  {
+        type: String,
+        default: '0'
+    }, 
+    phonenumber:  {
+        type: String,
+        default: '0'
+    }, 
     location: {
         type: String,
         default: ' '
