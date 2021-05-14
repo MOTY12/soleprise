@@ -21,7 +21,8 @@ const inventoryRoutes = require('./routes/inventory')
 const categoryRoutes = require('./routes/category')
 const classRoutes = require('./routes/classes')  
 const shopRoutes = require('./routes/shop')  
-const orderRoutes = require('./routes/order')  
+const orderRoutes = require('./routes/order')
+const studentRoutes = require('./routes/student')   
 
 app.get('/', (res, req)=>{
     res.send('working!!!')
@@ -35,6 +36,7 @@ app.use(`${apis}`, categoryRoutes)
 app.use(`${apis}`, classRoutes)
 app.use(`${apis}`, shopRoutes)
 app.use(`${apis}`, orderRoutes)
+app.use(`${apis}`, studentRoutes)
 
 
  //configuring the database
