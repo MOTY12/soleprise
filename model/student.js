@@ -5,6 +5,11 @@ const studentSchema = new mongoose.Schema({
         type: String
     },
     class: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Classes',
+        require: true
+    },
+    cardid: {
         type: String
     },
     photo: {
