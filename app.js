@@ -24,9 +24,9 @@ const shopRoutes = require('./routes/shop')
 const orderRoutes = require('./routes/order')
 const studentRoutes = require('./routes/student')   
 
-app.get('/', (res, req)=>{
-    res.send('working!!!')
-})
+// app.get('/', (res, req)=>{
+//     res.send('working!!!')
+// })
 
 
 
